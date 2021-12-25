@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="stixnote.js"></script>
+    <!-- <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script> -->
+    <script src="imagesloaded.pkgd.js"></script>
+    <link rel="stylesheet" href="stixnote.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>STIXNOTE</title>
+</head>
+<body>
+    <div id="before-load">
+        <!-- Иконка Font Awesome -->
+        <i class="fa fa-spinner fa-spin"></i>
+    </div>
+    <div id="pics" style = "display: none;">
+        <img id="img1" src = "img/1.png">
+        <img id="img2" src = "img/2.png">
+        <img id="img3" src = "img/3.png">
+        <img id="img4" src = "img/4.png">
+        <img id="img5" src = "img/5.png">
+        <img id="img6" src = "img/6.png">
+        <img id="img7" src = "img/7.png">
+        <img id="img8" src = "img/8.png">
+        <img id="img9" src = "img/9.png">
+        <img id="img10" src = "img/10.png">
+        <img id="img11" src = "img/11.png">
+        <img id="img12" src = "img/12.png">
+        <img id="img13" src = "img/13.png">
+        <img id="img14" src = "img/14.png">
+        <img id="img15" src = "img/15.png">
+        <img id="img16" src = "img/16.png">
+        <img id="img17" src = "img/17.png">
+        <img id="img18" src = "img/18.png">
+        <img id="img19" src = "img/19.png">
+        <img id="img20" src = "img/20.png">
+        <img id="img21" src = "img/21.png">
+        <img id="img22" src = "img/22.png">
+        <img id="img23" src = "img/23.png">
+    </div>
+    <div id="wrapper" class="ar fbig wrapper-big wrap-rel">
+        <div id="ed-edheader" class="ed edheader this-height this-top edheader-5-ar" contenteditable="true" tabindex="1" placeholder="Название"></div>
+        <div id="vow0" class=" this-height" style="padding-top:0 !important">
+            <div id="settbut" class="settbut-def" onclick="openit()">
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div id="sup">
+            <div id="main">
+
+            </div>
+        </div>
+    </div>
+    <div id="menumain" class="ar fbig disable-select">
+        <div id="butwr">
+            <div id="closebutt" class="settbut-def" onclick="closeit()">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+        <div class="spa-t">
+            <div>
+                <div>
+                    <div>
+                        <div id="stixnote" class="st-5-ar">STIXNOTE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <div id="menuwrapper">
+            <div class="trow trow-o"></div>
+            <div class="trow">
+                <div class="menuitem" id="setfont" onclick="changeFont()">Шрифт</div>
+            </div>
+            <div class="trow">
+                <div class="menuitem" id="setsize" onclick="changeSize()">Размер</div>
+            </div>
+            <div class="trow">
+                <div class="menuitem" id="setcolor" onclick="changeColor()">Цвет</div>
+            </div>
+            <div id="res-but" class="trow no-result">
+                <div class="menuitem" id="showresult" onclick="showRes()">Итог</div>
+            </div>
+            <div class="trow trow-o"></div>           
+        </div>
+        <div class="spa-b">
+            <div>
+                <div>
+                    <div>by alisabadass</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="resmain" class="no-result">
+        <div id="resclose" class="settbut-def" onclick="closeRes()">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="r-top">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div id="rescell">
+                <div id="rescont"></div>
+            </div>
+            <div></div>
+        </div>
+        <div class="r-bott">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+    </div>
+</body>
+</html>
